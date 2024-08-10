@@ -46,6 +46,10 @@ const model = genAI.getGenerativeModel({
   },
 });
 
+const model1 = genAI.getGenerativeModel({
+  model: "gemini-1.5-flash",
+});
+
 const chat = model.startChat();
 
 async function feedPrompt(usn = "1MP22CS031") {
@@ -74,9 +78,12 @@ async function run(message, usn) {
   // console.log(result);
   // console.log(result.response.functionCalls());
   const calls = result.response.functionCalls();
-  if (calls) {
+  console.log(calls);
+  if (calls !== undefined) {
+    console.log("In 1");
     const call = result.response.functionCalls()[0];
     if (call) {
+      console.log("In 1, 1");
       const apiResponse = await functions[call.name](call.args);
       const result2 = await chat.sendMessage([
         {
@@ -90,7 +97,8 @@ async function run(message, usn) {
       return result2.response.text();
     }
   } else {
-    const result1 = await model.generateContent(message);
+    console.log("In 2");
+    const result1 = await model1.generateContent(message);
     const response = await result1.response;
     const text = response.text();
     console.log(text);
