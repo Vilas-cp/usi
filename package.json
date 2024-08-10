@@ -1,11 +1,14 @@
 {
-  "name": "role-checker",
+  "name": "gemini-api",
   "version": "1.0.0",
-  "description": "A server to check user roles from APEX API and respond using Hugging Face AI",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
     "@google/generative-ai": "^0.16.0",
     "cors": "^2.8.5",

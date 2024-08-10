@@ -67,7 +67,6 @@ async function feedPrompt(usn = "1MP22CS031") {
 }
 
 async function run(message, usn) {
-  await feedPrompt();
   // const stName = process.argv.slice(2).join(" ");
   // console.log(stName);
   const prompt = message + " .My usn is " + usn;
@@ -118,10 +117,12 @@ app.post("/get-role", async (req, res) => {
     }
     res.json({ response: responseStr });
   } catch (error) {
-    return res.status(400).json({ error: error });
+    console.log(error)
+    return res.status(400).json({ error: error.toString() });
   }
 });
 
-app.listen(port, () => {
+app.listen(port, async () => {
+   await feedPrompt();
   console.log(`Server running on port ${port}`);
 });
