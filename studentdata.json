@@ -1,0 +1,233 @@
+[
+    {
+        "STD_ROW_NO": 1,
+        "USN": "1MP22AI047",
+        "EMAIL_ID": "1mp22ai047@bgscet.ac.in",
+        "STD_NAME": "Sathya Pushana Pramod",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "aiml",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 2,
+        "USN": "1MP22AI015",
+        "EMAIL_ID": "1mp22ai015@bgscet.ac.in",
+        "STD_NAME": "Harshith M",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "aiml",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 3,
+        "USN": "1MP22AI057",
+        "EMAIL_ID": "1mp22ai057@bgscet.ac.in",
+        "STD_NAME": "Tejas Krishna",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "aiml",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 4,
+        "USN": "1MP22AI006",
+        "EMAIL_ID": "1mp22ai006@bgscet.ac.in",
+        "STD_NAME": "Ashutosh Kumar",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "aiml",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 5,
+        "USN": "1MP22AI045",
+        "EMAIL_ID": "1mp22ai045@bgscet.ac.in",
+        "STD_NAME": "Rhea Fatima",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "aiml",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 6,
+        "USN": "1MP22IS010",
+        "EMAIL_ID": "1mp22is010@bgscet.ac.in",
+        "STD_NAME": "Channaveer BS",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "ise",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 7,
+        "USN": "1MP22IS002",
+        "EMAIL_ID": "1mp22is002@bgscet.ac.in",
+        "STD_NAME": "Akash NV",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "ise",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 8,
+        "USN": "1MP22IS006",
+        "EMAIL_ID": "1mp22is006@bgscet.ac.in",
+        "STD_NAME": "Ashustosh Kumar",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 21,
+        "BRANCH_ID": "ise",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 9,
+        "USN": "1MP22IS009",
+        "EMAIL_ID": "1mp22is009@bgscet.ac.in",
+        "STD_NAME": "Chandana H",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "ise",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 10,
+        "USN": "1MP22IS005",
+        "EMAIL_ID": "1mp22is005@bgscet.ac.in",
+        "STD_NAME": "Ashritha S",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "ise",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 21,
+        "USN": "1MP23CS006",
+        "EMAIL_ID": "aryanch0804@gmail.com",
+        "STD_NAME": "Aryan",
+        "SEM": 2,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 11,
+        "USN": "1MP22CS031",
+        "EMAIL_ID": "1mp22cs031@bgscet.ac.in",
+        "STD_NAME": "Manoja D",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 12,
+        "USN": "1MP22CS060",
+        "EMAIL_ID": "1mp22cs060@bgscet.ac.in",
+        "STD_NAME": "Vilas C P",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 13,
+        "USN": "1MP22CS003",
+        "EMAIL_ID": "1mp22cs003@bgscet.ac.in",
+        "STD_NAME": "Aditya S",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 14,
+        "USN": "1MP22CS039",
+        "EMAIL_ID": "1mp22cs039@bgscet.ac.in",
+        "STD_NAME": "Rahul S",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 15,
+        "USN": "1MP22CS029",
+        "EMAIL_ID": "1mp22cs029@bgscet.ac.in",
+        "STD_NAME": "Mahan J Shetty",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 16,
+        "USN": "1MP22CS016",
+        "EMAIL_ID": "1mp22cs016@bgscet.ac.in",
+        "STD_NAME": "Giridhara D",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "male"
+    },
+    {
+        "STD_ROW_NO": 17,
+        "USN": "1MP22CS032",
+        "EMAIL_ID": "1mp22cs032@bgscet.ac.in",
+        "STD_NAME": "Manushree V",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "cse",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 18,
+        "USN": "1MP22CS040",
+        "EMAIL_ID": "1mp22cs040@bgscet.ac.in",
+        "STD_NAME": "Rakshitha S",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 19,
+        "BRANCH_ID": "cse",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 19,
+        "USN": "1MP22CS007",
+        "EMAIL_ID": "1mp22cs007@bgscet.ac.in",
+        "STD_NAME": "Ankitha B R",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "cse",
+        "GENDER": "female"
+    },
+    {
+        "STD_ROW_NO": 20,
+        "USN": "1MP22CS009",
+        "EMAIL_ID": "1mp22cs009@bgscet.ac.in",
+        "STD_NAME": "Ayesha M",
+        "SEM": 4,
+        "SECTION": "A",
+        "AGE": 20,
+        "BRANCH_ID": "cse",
+        "GENDER": "female"
+    }
+]
