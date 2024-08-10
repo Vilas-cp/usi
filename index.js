@@ -71,21 +71,30 @@ async function run(message, usn) {
   // console.log(stName);
   const prompt = message + " .My usn is " + usn;
   const result = await chat.sendMessage(prompt);
-  console.log(result);
-  console.log(result.response.functionCalls());
-  const call = result.response.functionCalls()[0];
-  if (call) {
-    const apiResponse = await functions[call.name](call.args);
-    const result2 = await chat.sendMessage([
-      {
-        functionResponse: {
-          name: "getDetails",
-          response: apiResponse,
+  // console.log(result);
+  // console.log(result.response.functionCalls());
+  const calls = result.response.functionCalls();
+  if (calls) {
+    const call = result.response.functionCalls()[0];
+    if (call) {
+      const apiResponse = await functions[call.name](call.args);
+      const result2 = await chat.sendMessage([
+        {
+          functionResponse: {
+            name: "getDetails",
+            response: apiResponse,
+          },
         },
-      },
-    ]);
-    console.log(result2.response.text());
-    return result2.response.text();
+      ]);
+      console.log(result2.response.text());
+      return result2.response.text();
+    }
+  } else {
+    const result1 = await model.generateContent(message);
+    const response = await result1.response;
+    const text = response.text();
+    console.log(text);
+    return text;
   }
 }
 
@@ -117,12 +126,12 @@ app.post("/get-role", async (req, res) => {
     }
     res.json({ response: responseStr });
   } catch (error) {
-    console.log(error)
+    console.log(error);
     return res.status(400).json({ error: error.toString() });
   }
 });
 
 app.listen(port, async () => {
-   await feedPrompt();
+  await feedPrompt();
   console.log(`Server running on port ${port}`);
 });
