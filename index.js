@@ -50,9 +50,7 @@ const model1 = genAI.getGenerativeModel({
   model: "gemini-1.5-flash",
 });
 
-const chat = model.startChat();
-
-async function feedPrompt(usn = "1MP22CS031") {
+async function feedPrompt(chat, usn = "1MP22CS031") {
   const prompt = "Give me details of myself? My usn is " + usn;
   const result = await chat.sendMessage(prompt);
   const call = result.response.functionCalls()[0];
@@ -70,7 +68,7 @@ async function feedPrompt(usn = "1MP22CS031") {
   }
 }
 
-async function run(message, usn) {
+async function run(chat, message, usn) {
   // const stName = process.argv.slice(2).join(" ");
   // console.log(stName);
   const prompt = message + " .My usn is " + usn;
@@ -123,23 +121,24 @@ app.post("/get-role", async (req, res) => {
 
   if (!userEmail || !message) {
     console.error("Invalid request payload: Missing userEmail or message");
-    return res.status(400).json({ error: "Invalid request payload" });
+    return res.status(400).json({ response: "Invalid request payload" });
   }
 
   try {
     console.log("Fetching data");
-    const responseStr = await run(message, userEmail);
+    const chat = model.startChat();
+    await feedPrompt(chat, userEmail);
+    const responseStr = await run(chat, message, userEmail);
     if (responseStr == undefined || responseStr == null) {
       throw new Error("Invaild Answer!");
     }
     res.json({ response: responseStr });
   } catch (error) {
     console.log(error);
-    return res.status(400).json({ error: error.toString() });
+    return res.status(400).json({ response: error.toString() });
   }
 });
 
 app.listen(port, async () => {
-  await feedPrompt();
   console.log(`Server running on port ${port}`);
 });
